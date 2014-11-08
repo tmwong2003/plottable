@@ -8891,7 +8891,6 @@ var Plottable;
                     this.clearBox();
                     return;
                 }
-                this.drag(callback);
                 this.dragend(callback);
                 return this;
             };
