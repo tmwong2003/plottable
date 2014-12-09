@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Plottable Tutorial 6: Area Charts with Multiple Data Sets</title>
+
+<!-- use the Plottable css -->
+<link rel="stylesheet" type="text/css" href="../plottable.css" />
+
+<!-- import D3 -->
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+<!-- import Plottable-->
+<script src="../plottable.js"></script>
+
+<!-- import the data files -->
+<script src="areaData1.js"></script>
+<script src="areaData2.js"></script>
+
+<!-- load the script that draws the chart -->
+<script src="areaChart.js"></script>
+</head>
+<body>
+	<!-- Plottable will draw the chart in the svg tag. -->
+	<!-- You must specify the ID attribute so that Plottable knows where to draw. -->
+
+	<!-- The width and height attributes are optional; by default svg tags occupy their entire container. -->
+	<svg id="areaChart" width="640" height="480" />
+
+	<!-- ensure that this script will not run until the window has loaded -->
+	<script>
+		window.onload = areaChart;
+	</script>
+</body>
+</html>
